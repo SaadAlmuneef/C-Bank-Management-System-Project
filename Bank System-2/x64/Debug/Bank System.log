@@ -1,0 +1,20 @@
+﻿  Bank System.cpp
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(231,35): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(257,40): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(280,35): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(328,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(393,23): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(395,35): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(399,31): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(428,39): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\‏‏_strings - نسخة.h(447,39): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\BANK_SYSTEM.h(76,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\ABS\source\repos\Bank System\hFiles\BANK_SYSTEM.h(898): warning C4715: 'BANK_SYSTEM::DeleteClientByAccountNumber': not all control paths return a value
+C:\Users\ABS\source\repos\Bank System\hFiles\BANK_SYSTEM.h(940): warning C4715: 'BANK_SYSTEM::DeleteUserByUsername': not all control paths return a value
+C:\Users\ABS\source\repos\Bank System\hFiles\BANK_SYSTEM.h(1020): warning C4715: 'BANK_SYSTEM::UpdateUserByUsername': not all control paths return a value
+C:\Users\ABS\source\repos\Bank System\hFiles\BANK_SYSTEM.h(980): warning C4715: 'BANK_SYSTEM::UpdateClientByAccountNumber': not all control paths return a value
+C:\Users\ABS\source\repos\Bank System\hFiles\BANK_SYSTEM.h(1047): warning C4715: 'BANK_SYSTEM::DepositBalanceToClientByAccountNumber': not all control paths return a value
+  Bank System.vcxproj -> C:\Users\ABS\source\repos\Bank System\x64\Debug\Bank System.exe
