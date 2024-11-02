@@ -66,10 +66,9 @@ namespace BANK_SYSTEM {
         vector<string> vString;
     
         short pos = 0;
-        string sWord; // define a string variable  
+        string sWord;  
     
-        // use find() function to get the position of the delimiters  
-        while ((pos = S1.find(Delim)) != std::string::npos)
+         while ((pos = S1.find(Delim)) != std::string::npos)
         {
             sWord = S1.substr(0, pos); 
             if (sWord != "")
