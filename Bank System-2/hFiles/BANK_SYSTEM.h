@@ -740,7 +740,7 @@ namespace BANK_SYSTEM {
     {
     
         fstream MyFile;
-        MyFile.open(FileName, ios::out);//overwrite
+        MyFile.open(FileName, ios::out); 
     
         string DataLine;
     
