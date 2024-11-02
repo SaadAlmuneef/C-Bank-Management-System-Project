@@ -1,14 +1,10 @@
-/*
-CopyRight ProgrammingAdvices.com
-Mohammed Abu-Hadhoud
-*/
-
+ 
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
 #include <iomanip>
-#include "þþ_strings - äÓÎÉ.h"
+#include "Ã¾Ã¾_strings - Ã¤Ã“ÃŽÃ‰.h"
 
 using namespace std;
 using namespace _strings;
@@ -46,7 +42,7 @@ namespace BANK_SYSTEM {
     const string ClientsFileName = "Clients.txt";
     const string UsersFileName = "Users.txt";
     
-    stUser CurrentUser; // THE CURRENT LOGGED USER 
+    stUser CurrentUser; 
     
     void ShowMainMenue();
     void ShowTransactionsMenue();
@@ -75,18 +71,18 @@ namespace BANK_SYSTEM {
         // use find() function to get the position of the delimiters  
         while ((pos = S1.find(Delim)) != std::string::npos)
         {
-            sWord = S1.substr(0, pos); // store the word   
+            sWord = S1.substr(0, pos); 
             if (sWord != "")
             {
                 vString.push_back(sWord);
             }
     
-            S1.erase(0, pos + Delim.length());  /* erase() until positon and move to next word. */
+            S1.erase(0, pos + Delim.length());   
         }
     
         if (S1 != "")
         {
-            vString.push_back(S1); // it adds last word of the string.
+            vString.push_back(S1); 
         }
     
         return vString;
@@ -121,7 +117,7 @@ namespace BANK_SYSTEM {
         Client.PinCode = vClientData[1];
         Client.Name = vClientData[2];
         Client.Phone = vClientData[3];
-        Client.AccountBalance = stod(vClientData[4]);//cast string to double
+        Client.AccountBalance = stod(vClientData[4]); 
     
     
         return Client;
@@ -177,7 +173,7 @@ namespace BANK_SYSTEM {
         vector <sClient> vClients;
     
         fstream MyFile;
-        MyFile.open(FileName, ios::in);//read Mode
+        MyFile.open(FileName, ios::in); 
     
         if (MyFile.is_open())
         {
@@ -213,7 +209,7 @@ namespace BANK_SYSTEM {
     
     
         fstream MyFile;
-        MyFile.open(FileName, ios::in);//read Mode
+        MyFile.open(FileName, ios::in); 
     
         if (MyFile.is_open())
         {
@@ -248,8 +244,7 @@ namespace BANK_SYSTEM {
     
         cout << "Enter Account Number? ";
     
-        // Usage of std::ws will extract allthe whitespace character
-        getline(cin >> ws, Client.AccountNumber);
+         getline(cin >> ws, Client.AccountNumber);
     
         while (ClientExistsByAccountNumber(Client.AccountNumber, ClientsFileName))
         {
@@ -351,8 +346,7 @@ namespace BANK_SYSTEM {
     
         cout << "Enter Username? ";
     
-        // Usage of std::ws will extract allthe whitespace character
-        getline(cin >> ws, User.UserName);
+         getline(cin >> ws, User.UserName);
     
         while (UserExistsByUsername(User.UserName, UsersFileName))
         {
@@ -375,7 +369,7 @@ namespace BANK_SYSTEM {
         vector <stUser> vUsers;
     
         fstream MyFile;
-        MyFile.open(FileName, ios::in);//read Mode
+        MyFile.open(FileName, ios::in); 
     
         if (MyFile.is_open())
         {
@@ -405,7 +399,7 @@ namespace BANK_SYSTEM {
         vector <sClient> vClients;
     
         fstream MyFile;
-        MyFile.open(FileName, ios::in);//read Mode
+        MyFile.open(FileName, ios::in); 
     
         if (MyFile.is_open())
         {
@@ -716,7 +710,7 @@ namespace BANK_SYSTEM {
     {
     
         fstream MyFile;
-        MyFile.open(FileName, ios::out);//overwrite
+        MyFile.open(FileName, ios::out); 
     
         string DataLine;
     
@@ -728,8 +722,7 @@ namespace BANK_SYSTEM {
     
                 if (C.MarkForDelete == false)
                 {
-                    //we only write records that are not marked for delete.  
-                    DataLine = ConvertRecordToLine(C);
+                     DataLine = ConvertRecordToLine(C);
                     MyFile << DataLine << endl;
     
                 }
@@ -760,8 +753,7 @@ namespace BANK_SYSTEM {
     
                 if (U.MarkForDelete == false)
                 {
-                    //we only write records that are not marked for delete.  
-                    DataLine = ConvertUserRecordToLine(U);
+                     DataLine = ConvertUserRecordToLine(U);
                     MyFile << DataLine << endl;
                 }
     
@@ -779,7 +771,7 @@ namespace BANK_SYSTEM {
         fstream MyFile;
         string AdminLine;
 
-        MyFile.open(UsersFileName, ios::out);//overwrite
+        MyFile.open(UsersFileName, ios::out); 
 
         stUser admin;
         admin.UserName = "Admin";
@@ -830,8 +822,7 @@ namespace BANK_SYSTEM {
         char AddMore = 'Y';
         do
         {
-            //system("cls");
-            cout << "Adding New Client:\n\n";
+             cout << "Adding New Client:\n\n";
     
             AddNewClient();
             cout << "\nClient Added Successfully, do you want to add more clients? Y/N? ";
@@ -848,8 +839,7 @@ namespace BANK_SYSTEM {
         char AddMore = 'Y';
         do
         {
-            //system("cls");
-            cout << "Adding New User:\n\n";
+             cout << "Adding New User:\n\n";
     
             AddNewUser();
             cout << "\nUser Added Successfully, do you want to add more Users? Y/N? ";
@@ -881,8 +871,7 @@ namespace BANK_SYSTEM {
                 MarkClientForDeleteByAccountNumber(AccountNumber, vClients);
                 SaveCleintsDataToFile(ClientsFileName, vClients);
     
-                //Refresh Clients 
-                vClients = LoadCleintsDataFromFile(ClientsFileName);
+                 vClients = LoadCleintsDataFromFile(ClientsFileName);
     
                 cout << "\n\nClient Deleted Successfully.";
                 return true;
@@ -923,8 +912,7 @@ namespace BANK_SYSTEM {
                 MarkUserForDeleteByUsername(Username, vUsers);
                 SaveUsersDataToFile(UsersFileName, vUsers);
     
-                //Refresh Clients 
-                vUsers = LoadUsersDataFromFile(UsersFileName);
+                 vUsers = LoadUsersDataFromFile(UsersFileName);
     
                 cout << "\n\nUser Deleted Successfully.";
                 return true;
@@ -1534,8 +1522,7 @@ namespace BANK_SYSTEM {
     
         case enMainMenueOptions::eExit:
             system("cls");
-            // ShowEndScreen();
-            Login();
+             Login();
     
             break;
         }
